@@ -241,7 +241,7 @@
   requirement: |
     Пользователь имеет возможность создать игру с ботом
   prerequisites:
-    Выполнена авторизация пользователя Polina96
+    Выполнена авторизация пользователя NikitaVasev
   test-data: |
     https://codebattle.hexlet.io/
   steps:
@@ -258,7 +258,7 @@
     Пользователь имеет возможность отправить приглашение другу
   prerequisites:
     Выполнена авторизация пользователя Dmitriy95
-    Авторизован друг email = prokhorova@gmail.com пароль = Polina96* логин = Polina96
+    Авторизован друг email = nike.nike.1958@mail.ru пароль = Vasev123aza логин = NikitaVasev
   test-data: |
     https://codebattle.hexlet.io/
   steps:
@@ -268,7 +268,7 @@
     - остальные параметры игры оставляем "по умолчанию"
     - нажимаем "Create invite"
   expected-result: |
-    Пользователь Polina96 получил приглашение в игру, созданную Dmitriy95
+    Пользователь NikitaVasev получил приглашение в игру, созданную Dmitriy95
 
 - summary: |
     Проверка получения приглашения в игру от друга
@@ -277,7 +277,7 @@
   prerequisites:
     Ранее отправлено приглашение от пользователя Dmitriy95
   test-data: |
-    email = prokhorova@gmail.com пароль = Polina96*
+    email = nike.nike.1959@mail.ru пароль = Vasev123aza
   steps:
     - открываем сайт https://codebattle.hexlet.io/
     - выполняем вход в ситстему
@@ -292,7 +292,7 @@
   prerequisites:
     Получено приглашение в игру
   test-data: |
-    email = prokhorova@gmail.com пароль = Polina96*
+    email = nike.nike.1958@mail.ru пароль = Vasev123aza
   steps:
     - открываем сайт https://codebattle.hexlet.io/
     - выполняем вход в ситстему
@@ -472,9 +472,9 @@
     https://codebattle.hexlet.io/
   steps:
     - создаем игру с другом, отправляем приглашение
-    - пользователь Polina96 принимает приглашение
+    - пользователь NikitaVasev принимает приглашение
     - батл начался
-    - пользователь Polina95 начинает вводить код
+    - пользователь NikitaVasev начинает вводить код
     - пользователь Dmitriy95 видет введеный код своего соперника
   expected-result: |
     Пользователь видит код своего соперника в режиме он-лайн 
@@ -532,16 +532,16 @@
   prerequisites:
     Выполнена авторизация двух пользователей и открыт сайт https://codebattle.hexlet.io/
   test-data: |
-    пользователь Polina96 email = pprokhorova96@gmail.com пароль = Polina96*
+    пользователь NikitaVasev email = nike.nike.1958@mail.ru пароль = Vasev123aza
     пользователь Dmitriy95 email = andrusindmitrij380@gmail.com пароль = Dima95*
   steps:
     - нажимаем "Create a game"
     - выбираем Game type "With a friend"
     - в строке "Choose opponent" вводим логин друга Polina96
     - нажимаем "Create invite"
-    - пользователь Polina96 нажимает "Accept" на приглашение
+    - пользователь NikitaVasev нажимает "Accept" на приглашение
     - двоих пользователей перекинуло в игру
-    - пользователь Polina96 закрывает вкладку с игрой в браузере
+    - пользователь NikitaVasev закрывает вкладку с игрой в браузере
   expected-result: |
     Пользователь Dmitriy95 остается в игре, может продолжать вводить решение
 
@@ -550,13 +550,13 @@
   requirement: |
     Пользователь имеет возможность вернуться в игру после вылета
   prerequisites:
-    Создана игра, пользователь Polina96 вылетел из игры
+    Создана игра, пользователь NikitaVasev вылетел из игры
   test-data: |
-    пользователь Polina96 email = pprokhorova96@gmail.com пароль = Polina96*
+    пользователь NikitaVasev email = nike.nike.1958@mail.ru пароль = Vasev123aza
     пользователь Dmitriy95 email = andrusindmitrij380@gmail.com пароль = Dima95*
   steps:
     - открываем сайт https://codebattle.hexlet.io/
-    - выполняем вход в систему Polina96
+    - выполняем вход в систему NikitaVasev
     - в окне "Lobby" находим нашу игру
     - нажимаем "Continue"
   expected-result: |
@@ -583,10 +583,10 @@
   prerequisites:
     Создана игра c заданием "rect_area"
   test-data: |
-    пользователь Polina96 email = pprokhorova96@gmail.com пароль = Polina96*
+    пользователь NikitaVasev email = nike.nike.1959@mail.ru пароль = Vasev123aza
     пользователь Dmitriy95 email = andrusindmitrij380@gmail.com пароль = Dima95*
   steps:
-    - пользователь Polina96 вводит верное решение "width * length"
+    - пользователь NikitaVasev вводит верное решение "width * length"
     - нажимает "run"
     - получает модальное окно о победе
     - пользователь Dmitriy95 получает модальное окно о поражении
@@ -602,7 +602,7 @@
   test-data: |
     https://codebattle.hexlet.io/
   steps:
-    - пользователь Polina96 вводит верное решение "width * length"
+    - пользователь NikitaVasev вводит верное решение "width * length"
     - нажимает "run"
     - получает модальное окно о победе
     - закрываем модальное окно
@@ -619,7 +619,7 @@
   test-data: |
     https://codebattle.hexlet.io/
   steps:
-    - пользователь Polina96 вводит верное решение "width * length"
+    - пользователь NikitaVasev вводит верное решение "width * length"
     - нажимает "run"
     - получает модальное окно о победе
     - закрываем модальное окно
